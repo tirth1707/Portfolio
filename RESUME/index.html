@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav class="menu">
+
+      <ul>
+        <li><a href="#home">Home</a ></li>
+        <li><a href="#intro">Summary</a></li>
+      </ul>
+    </nav>
+
+<section id="home">
+  <h1 class="name1" >HI, I AM</h1>
+  <h1 class="name2">LAKHANI TIRTH</h1>
+  <br/>
+  <p class="para"> AND THIS IS MY RESUME.</p>
+</section>
+
+<section  id="intro">
+    <div class="row">
+      <div class="col1">
+        <img src="tirthh.jpg">
+      </div>
+      <div class="col2">
+        <h1 class="sum"> Summary</h1>
+        <p>Proactive and process oriented IT individual with hands on experience of various computer languages
+           currently seeking an admission in Master’s program in your esteemed university in order to enhance 
+           skills of critical IT areas of infrastructure planning, deployment and management. </p>
+
+          <div class="tab">
+            <p class="link active" onclick="opentab('skills')">Skills</p>
+            <p class="link"onclick="opentab('experience')">Experience</p>
+            <p class="link"onclick="opentab('education')">Education</p>
+            <p class="link"onclick="opentab('certification')">Certification</p>
+            <p class="link"onclick="opentab('activity')"> Activity</p>
+            <p class="link"onclick="opentab('contact')"> Contact</p>
+           
+          </div>
+
+          <div class="content active-content" id="skills">
+            <ul>
+              <li><span>Programming-Language:</span><br>Python/C/Java (Core) </li>
+              <li><span>Front-End:</span><br>HTML 5/CSS 3/JavaScript/Angular/PHP </li>
+              <li><span>Back-End:</span><br>Django/NodeJS/Angular </li>
+              <li><span>OS:</span><br>Kali Linux/Windows/ubuntu/mac os </li>
+              <li><span>DB:</span><br>MYSQL/MongoDB(basic)</li>
+            </ul>
+          </div>
+
+          <div class="content"  id="experience">
+            <ul>
+              <li><span>CODEEDOC</span><br>Devops Developer and cloud Architecture <br>DEC2022-AUG2023 <br>
+                Assist in Conducting quality assurance to ensure that the software meets prescribed guidelines Securing software to prevent security breaches and other vulnerabilities. 
+                Collecting and reviewing customers' feedback to enhance user experience. 
+                Assist in Create a well-informed cloud strategy and manage the adaption process.Regularly evaluate cloud applications, hardware and software.  
+               </li>
+    
+            </ul>
+          </div>
+          <div class="content"  id="education">
+            <ul>
+              <li><span>Darmsinh Desai University</span><br>Bachelor in Information Technology <br>SEP2020-JUNE 2023 </li>
+              <li><span>Gujarat Technological University</span><br>Diploma in Computer Engineering <br>JUN2017-AUG2020  </li>
+              <li><span></span><br> </li>
+            </ul>
+          </div>
+          <div class="content" id="certification">
+            <ul>
+              <li>1. Participated in Tech Fest organized by the University. </li>
+              <li>2. Certified Penetration Testing Engineer (CPTE by Mile2).</li>
+              <li>3. Microsoft Certified: Azure Data Fundamentals.</li>
+            </ul>
+          </div>
+          <div class="content" id="activity">
+            <ul>
+              <li>1. Participated in Tech Fest organized by the University. </li>
+              <li>2. Represented my project ‘Home Automation System’ in district level competition. </li>
+              <li>3. Attended distinct workshops conducted by the School of Engineering, Dharmsinh Desai University (DDU).</li>
+            </ul>
+          </div>
+<div class="content" id="contact">
+  <ul>
+    <li>1.
+      <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+      <span class="text">+1 (201) 554 5507</span>
+    </li>
+    <li>2.
+      <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+      <span class="text">tirthlakhani170702@gmail.com </span>
+    </li>
+    <li>3.
+      <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+      <span class="text">www.linkedin.com/TirthLakhani</span>
+    </li>
+    <li>4.
+      <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+      <span class="text">685 summit Ave, Jersey City</span>
+    </li>
+   </ul>
+</div>
+
+      </div>
+    </div>
+</section>
+
+
+<section id="contactInfo">
+          <div class="contact">
+                </section>
+
+<script>
+  var tablink= document.getElementsByClassName("tab")
+  var tabcontent= document.getElementsByClassName("content")
+   function opentab(tabname){
+    for(tablinks of tablink){
+      tablinks.classList.remove("active");
+    }
+    for(tabcontents of tabcontent){
+      tabcontents.classList.remove("active-content");
+    }
+    event.currentTarget.classList.add("active")
+    document.getElementById(tabname).classList.add("active-content")
+   }
+</script>
+  </body>
+</html> 
+
+
